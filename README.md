@@ -14,6 +14,7 @@ Hier ist eine Roadmap für Dinge, die noch kommen sollen:
  - Interface [v]
  - Implementierung des Spielercharakters [v]
  - Implementierung eines Fertigkeitssystems [v]
+ - Implementierung von Waffen und (Aus)Rüstung [t]
  - Implementierung von Nichtspielercharakteren [t] (einige sind fertig, weitere werden folgen)
  - Implementierung eines Kampfssystems [t] (funktioniert bis jetzt nur über Eingabe und muss auf Buttons umkodiert werden)
  - Implementierung eines Zaubersystems [t] (funktioniert bis jetzt nur über Eingabe und muss auf Buttons umkodiert werden)
@@ -44,6 +45,7 @@ This is the road map for what is yet to come:
  - Creating a UI [v]
  - Implementing the player character [v]
  - Implementing a skill system [v]
+ - Adding weapons, gear and armour [p]
  - Implementing the non-player characters [p] (some are done, more will follow)
  - Implementing eines Kampfssystems [p] (works only via typing command, needs to be recoded for buttons)
  - Implementing eines Zaubersystems [p] (works only via typing command, needs to be recoded for buttons)
