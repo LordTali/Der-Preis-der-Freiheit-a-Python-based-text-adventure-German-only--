@@ -93,5 +93,3 @@ zweihaendige_axt = Aexte ("Zweihändige Axt", "Nahkampf",
                            2,
                            2,
                           2,2)
-
-#print(kurzschwert.angriffsmalus)
