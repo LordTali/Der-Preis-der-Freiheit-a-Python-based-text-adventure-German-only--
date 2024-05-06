@@ -41,7 +41,7 @@ This is the road map for what is yet to come:
 
 (Legend: [v] - done, [p] - partially done, [x] - to do)
 
- - Interface [v]
+ - Creating UI [v]
  - Implementing the player character [v]
  - Implementing a skill system [v]
  - Implementing the non-player characters [p] (some are done, more will follow)
