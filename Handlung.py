@@ -17,8 +17,6 @@ def verzoegerung (zeilen, index):
 
 
 def spielstart():
-    pygame.mixer.music.load("Creepy_Spannung.mp3")
-    pygame.mixer.music.play()
     from ZdZ_GUI import dialog_aktualisieren, schaltflaechen_aktualisieren, anzeige_text
     zeilen = ["Willkommen bei 'Der Preis der Freiheit', einem Textabenteuerspiel in der Welt von 'Zeit der Zünfte' von Vitali Hänisch.\n\n",
             "Du kannst direkt mit dem Abenteuer loslegen oder zunächst mehr über die Regeln erfahren. Klicke dazu einfach auf die entsprechende Schaltfläche.\n\n"
