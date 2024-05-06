@@ -158,6 +158,3 @@ licht = Zauber("Licht",
                20,
                "1 Minute je Stufe",  "ja",0,0,
                " ", False,False,False,True, "geblendet")
-
-
-#blitz.Schaden_berechnen()
