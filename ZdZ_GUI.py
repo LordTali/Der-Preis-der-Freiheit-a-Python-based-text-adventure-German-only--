@@ -17,15 +17,11 @@ def fertigkeitswurf(fertigkeit):
     wurf = Maika.Fertigkeitswurf_ablegen(fertigkeit)
     anzeige_text.insert(tk.END, wurf)
 
-def antworten(option): # Okay, bei der Aktualisierung läuft alles korrekt. "Antworten" reagiert nicht auf reagieren. Warum?
+def antworten(option):
     option()
     '''reagieren = dialog_optionen.get(option)
     if reagieren:
         reagieren()'''
-
-    #if reagieren:
-     #   print("bla")
-      #  reagieren()
 
 # Das eigentliche Hauptfenster
 root = tk.Tk()
@@ -137,8 +133,7 @@ fenster_fertigkeiten.pack(pady=10)
 # Die tatsächlichen Fertigkeiten
 fertigkeiten = ["Erkennen", "Tarnung", "Magistik", "Religion", "Menschenkenntnis", "Überreden", "Täuschen", "Orientieung"]
 for fertigkeit in fertigkeiten:
-    schalflaeche_fertigkeit = tk.Button(fenster_rechts, text=fertigkeit, bg="white", fg="black", font=("Helvetica", 12), command = partial(Maika.Fertigkeitswurf_ablegen, fertigkeit))                #command=lambda fertigkeit=fertigkeit: fertigkeitswurf(fertigkeit))
-    schalflaeche_fertigkeit.pack(pady=5, padx=20, anchor="w")
+    schalflaeche_fertigkeit = tk.Button(fenster_rechts, text=fertigkeit, bg="white", fg="black", font=("Helvetica", 12), command = partial(Maika.Fertigkeitswurf_ablegen, fertigkeit))
 
 # Fenster für die Waffenfertigkeiten
 fenster_rechts_unten = tk.Frame(root, bg="white", width=100, height=200)
@@ -186,7 +181,7 @@ anzeige_text.insert(tk.END, ("Willkommen bei 'Der Preis der Freiheit', einem Tex
 Textpause()
 anzeige_text.insert(tk.END, ("Du kannst direkt mit dem Abenteuer loslegen oder zunächst mehr über die Regeln erfahren. Klicke dazu einfach auf die entsprechende Schaltfläche.\n\n"))
 for dialogoption, reaktion in dialog_optionen.items():
-    schalflaeche_dialog = tk.Button(fenster_dialog, text=dialogoption, bg="white", fg="black", font=("Helvetica", 12), command=lambda option =reaktion: antworten(option)) # Die Bezüge stimmen. Wenn man statt "antworten" die Option printet, wird korrektweiter geleitet. Was stimmt also nicht?
+    schalflaeche_dialog = tk.Button(fenster_dialog, text=dialogoption, bg="white", fg="black", font=("Helvetica", 12), command=lambda option =reaktion: antworten(option))
     schalflaeche_dialog.pack(side=tk.TOP, padx=10, pady=5)
 
 
@@ -207,10 +202,6 @@ def schaltflaechen_aktualisieren():
         schaltflaeche_dialogoption.pack(padx=10, pady=5)
 
 
-
-#update_dialog(dialog_optionen) # Hier dann einfach eine Liste mit neuen Optionen einfügen. Können mehr oder weniger sein.
-
-
 def dialog_uebertragen(dialog):
     for zeile in dialog:
         anzeige_text.insert(tk.END, zeile + "\n\n")
@@ -218,6 +209,5 @@ def dialog_uebertragen(dialog):
 
 
 # Fenster starten
-
 
 root.mainloop()
