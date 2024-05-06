@@ -17,10 +17,22 @@ Hier ist eine Roadmap für Dinge, die noch kommen sollen:
  - Implementierung von Waffen und (Aus)Rüstung [t]
  - Implementierung von Nichtspielercharakteren [t] (einige sind fertig, weitere werden folgen)
  - Implementierung eines Kampfssystems [t] (funktioniert bis jetzt nur über Eingabe und muss auf Buttons umkodiert werden)
+   - Kampfschleife [v]
+     - Kampfteilnehmer [t] (implementiert, aber noch zu erweitern)
+   - Trefferzonen [v]
+   - Schadenseffekte [v]
+   - Initiative [v]
+   - Angriffoptionen [v]
+   - Angriffs- und Schadensberechnung. [v]
+   - Rettungswürfe [v]
  - Implementierung eines Zaubersystems [t] (funktioniert bis jetzt nur über Eingabe und muss auf Buttons umkodiert werden)
+   - Zauberformel [v]
+   - Konkrete Zauber [t] (implementiert, aber noch zu erweitern)
+   - Zauberdetonation [v]
+ - Weitere Regeln [t]
  - Einbindung der Handlung und Handlungsstränge [x]
  - Einbindung von Musik und Soundeffekten [x]
- - Qualitätssicherung und Beseitigung potentieller Bugs [x]
+ - Qualitätssicherung, Spieltests und Beseitigung potentieller Bugs [x]
  - Export des fertigen Spiels [x]
 
 Weitere Updates folgen entsprechend dem Fortschritt.
@@ -47,11 +59,22 @@ This is the road map for what is yet to come:
  - Implementing a skill system [v]
  - Adding weapons, gear and armour [p]
  - Implementing the non-player characters [p] (some are done, more will follow)
- - Implementing eines Kampfssystems [p] (works only via typing command, needs to be recoded for buttons)
- - Implementing eines Zaubersystems [p] (works only via typing command, needs to be recoded for buttons)
+ - Implementing the combat system [p] (works only via typing command, needs to be recoded for buttons)
+   - Combat loop [v]
+     - Handling combatants [p] (implemented, but yet to expand)
+   - Damage areas [v]
+   - Damage effects [v]
+   - Initiative [v]
+   - Attack options [v]
+   - Calulating attack and damage [v]
+ - Implementing the magic system [p] (works only via typing command, needs to be recoded for buttons)
+   - Implementing casting rules [v]
+   - Adding spells to cast [p] (implemented, but yet to expand)
+   - Adding spell detonation [v]
+ - Implementing additional rules [v]
  - Adding the main plot and plot threads [x]
  - Addubg music and sound effects [x]
- - Quality assurance and clearing of potential bugs [x]
+ - Quality assurance, playtesting and clearing potential bugs [x]
  - Exporting the final game [x]
 
 Further updates will follow as development progresses.
